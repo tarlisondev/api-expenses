@@ -7,7 +7,7 @@ import router from './routes/index.js';
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: '*' }));
+app.use(cors({ origin: 'https://tarlisondev.github.io' }));
 app.use(router);
 
 app.listen(config.port, () => {
